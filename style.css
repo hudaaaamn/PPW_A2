@@ -1,0 +1,553 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --bg-color: #2a2a2a;
+  --second-bg-color: #202020;
+  --text-color: #fff;
+  /* --main-color: #ff4d05; */
+  --main-color: #0062ffeb;
+  --second-color: #ccc;
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+  --big-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+
+/*=============== RESET ===============*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/*=============== NAVBAR ===============*/
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 3% 15%;
+  border-bottom: 1px solid transparent;
+  transition: all 0.45s ease-in-out;
+}
+
+/* header.sticky {
+  background: var(--bg-color);
+  border-bottom: 1px solid #ffffff1a;
+  padding: 12px 15%;
+} */
+
+header.sticky {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba (255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.175);
+  padding: 12px 15%;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  color: var(--second-color);
+  font-size: 17.5px;
+  font-weight: 600;
+  margin: 0px 25px;
+  transition: all 0.45s ease-in-out;
+}
+
+.navlist a:hover {
+  color: var(--main-color);
+}
+
+/* .navlist a.active {
+  color: var(--main-color);
+} */
+
+#menu-icon {
+  font-size: 30px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 15px;
+  display: none;
+}
+
+/*=============== EACH SECTION SET UP ===============*/
+
+section {
+  padding: 160px 15% 120px;
+}
+
+/*=============== HOME ===============*/
+
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(img\img1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slide {
+  margin-bottom: 20px;
+}
+
+.one {
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-radius: 5px;
+}
+.two {
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.home-text h1 {
+  display: inline-block;
+  color: var(--text-color);
+  font-size: var(--big-font);
+  list-style: 1.1;
+  margin: 0 0 8px;
+}
+
+.home-text h3 {
+  color: var(--text-color);
+  margin: 0 0 35px;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.home-text p {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: var(--main-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.45s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.btn2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-left: 35px;
+}
+
+.btn2 span i {
+  height: 55px;
+  width: 55px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: all 0.45s ease-in-out;
+}
+
+.btn2 span i:hover {
+  transform: scale(1.1) translateY(5px);
+}
+
+/*=============== ABOUT ME ===============*/
+
+.aboutt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-img img {
+  max-width: 530px;
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.about-text h2 {
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+
+.about-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+
+.about-text p {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
+
+/*=============== SERVICES ===============*/
+.service {
+  background-color: var(--second-bg-color);
+}
+
+.main-text {
+  text-align: center;
+}
+
+.main-text p {
+  color: var(--second-color);
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.main-text h2 {
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(3,1fr)  ;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.box {
+  display:grid ;
+  grid-template-rows: 50px 100px 350px 50px;
+  background-color: var(--bg-color);
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all 0.45s ease-in-out;
+}
+
+.s-icons i {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.box p {
+  color: var(--second-color);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.read {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  background-color: #333333;
+  color: var(--second-color);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.45s ease-in-out;
+}
+
+.read:hover {
+  letter-spacing: 1px;
+  background-color: #ffffff99;
+  color: var(--text-color);
+}
+
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 5px 15px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+/*=============== PORTFOLIO ===============*/
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.row img {
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+  transition: all 0.45s ease-in-out;
+}
+
+.layer {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.01), #ffffff75);
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+.layer h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.layer p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.layer i {
+  color: var(--main-color);
+  margin-top: 20px;
+  font-size: 20px;
+  background: var(--text-color);
+  width: 60px;
+  height: 60px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.row:hover .layer {
+  height: 100%;
+}
+
+/*=============== CONTACT ME ===============*/
+
+.contactt {
+  background-color: var(--second-bg-color);
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; */
+  gap: 2.5rem;
+}
+
+.contact-text h4 {
+  color: var(--text-color);
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-text h2 {
+  color: var(--second-color);
+  line-height: 1;
+}
+
+.contact-text p {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.list {
+  margin-bottom: 2.8rem;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+.list li a {
+  display: block;
+  color: var(--second-color);
+  font-size: 14px;
+  transition: all 0.45s ease-in-out;
+}
+
+.list li a:hover {
+  color: var(--text-color);
+  transform: translateX(5px);
+}
+
+.contact-icons i {
+  height: 45px;
+  width: 45px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  transition: all 0.45s ease-in-out;
+}
+
+.contact-icons a i:hover {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+.contact-form form {
+  position: relative;
+}
+
+.contact-form form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 240px;
+}
+
+.contact-form .submit {
+  display: inline-block;
+  font-size: 16px;
+  background: var(--main-color);
+  color: var(--text-color);
+  width: 160px;
+  transition: all 0.45s ease-in-out;
+}
+
+.contact-form .submit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*=============== END ===============*/
+
+.end {
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--bg-color);
+}
+
+.last-text {
+  color: var(--second-color);
+  font-size: 14px;
+}
+
+.top i {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
